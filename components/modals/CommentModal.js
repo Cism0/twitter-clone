@@ -14,7 +14,7 @@ import { Router, useRouter } from "next/router";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-export default function CoomentModal() {
+export default function CommentModal() {
   const isOpen = useSelector((state) => state.modals.commentModalOpen);
   const userImg = useSelector((state) => state.user.photoUrl);
   const tweetDetails = useSelector(state => state.modals.commentTweetDetails)

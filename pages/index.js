@@ -7,7 +7,7 @@ import PostFeed from "@/components/Postfeed";
 import Trending from "@/components/Trending";
 import BottomBanner from "@/components/BottomBanner";
 import { useSelector } from "react-redux";
-import CoomentModal from "@/components/modals/CommentModal";
+import CommentModal from "@/components/modals/CommentModal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,7 +29,7 @@ export default function Home() {
         <Trending />
       </div>
 
-      <CoomentModal />
+      <CommentModal />
 
      {!username && <BottomBanner />}
     </div>
